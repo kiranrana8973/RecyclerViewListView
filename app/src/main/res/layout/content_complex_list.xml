@@ -10,44 +10,11 @@
     tools:showIn="@layout/activity_complex_list">
 
 
-<ImageView
-    android:layout_width="100dp"
-    android:layout_height="100dp"
-    android:id="@+id/imgPerson"
-    android:background="@color/colorAccent"
-    android:layout_marginLeft="5dp"
-    android:layout_marginTop="5dp"
-    android:padding="8dp"
-    android:scaleType="centerCrop"
-    />
-
-    <LinearLayout
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view"
         >
+    </android.support.v7.widget.RecyclerView>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/lblFullname"
-            android:textSize="20sp"
-            android:text="Full Name"
-            android:textStyle="italic"
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/lblDetails"
-            android:layout_marginTop="10dp"
-            android:textSize="20sp"
-            android:text="Details"
-            android:textStyle="italic"
-            />
-
-
-    </LinearLayout>
 </LinearLayout>
