@@ -34,7 +34,7 @@ public class ListActivity extends AppCompatActivity {
         contacts.add(new Contacts("Aarush Rana","Person",2));
         contacts.add(new Contacts("Achyut Timinsina","Person",3));
         contacts.add(new Contacts("Niman Maharjan","Person",4));
- 
+
 
         ArrayAdapter<Contacts> arrayAdapter = new ArrayAdapter<Contacts>(this,android.R.layout.simple_list_item_1,contacts);
         lstContacts.setAdapter(arrayAdapter);

@@ -1,11 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".ComplexListActivity"
     tools:showIn="@layout/activity_complex_list">
 
-</android.support.constraint.ConstraintLayout>
+
+<ImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:id="@+id/imgPerson"
+    android:background="@color/colorAccent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:padding="8dp"
+    android:scaleType="centerCrop"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblFullname"
+            android:textSize="20sp"
+            android:text="Full Name"
+            android:textStyle="italic"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lblDetails"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:text="Details"
+            android:textStyle="italic"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>
