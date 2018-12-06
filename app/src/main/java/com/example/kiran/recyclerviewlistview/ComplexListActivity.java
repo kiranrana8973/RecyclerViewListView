@@ -27,15 +27,13 @@ public class ComplexListActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        List<Contacts> contacts = new ArrayList<>();
 
-        final List<Contacts> contacts = new ArrayList<>();
-
-        contacts.add(new Contacts("Kiran Rana","Person1",1));
-        contacts.add(new Contacts("Anita Rana","Person2",1));
-        contacts.add(new Contacts("Aarush Rana","Person3",2));
-        contacts.add(new Contacts("Achyut Timinsina","Person4",3));
-        contacts.add(new Contacts("Niman Maharjan","Person5",4));
-
+        contacts.add(new Contacts("Kiran Rana","Person1",R.drawable.kiran));
+        contacts.add(new Contacts("Anita Rana","Person2",R.drawable.anita));
+        contacts.add(new Contacts("Aarush Rana","Person3",R.drawable.aarush));
+        contacts.add(new Contacts("Achyut Timinsina","Person4",R.drawable.achyut));
+        contacts.add(new Contacts("Niman Maharjan","Person5",R.drawable.niman));
 
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(this,contacts);

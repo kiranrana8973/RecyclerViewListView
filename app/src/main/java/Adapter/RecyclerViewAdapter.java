@@ -43,7 +43,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         //viewHolder.image.setImageResource();
         viewHolder.Fullname.setText(contact.getName());
         viewHolder.Details.setText(contact.getDetail());
-
+        viewHolder.image.setImageResource(contact.getPhoto());
     }
 
     @Override
